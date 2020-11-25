@@ -1,2 +1,3 @@
-# PofFreeSurfer
-Quantification of uncertainty of FreeSurfer output
+# P(FreeSurfer)
+Quantification of uncertainty of FreeSurfer's longitudinal-segmentation output
+
