@@ -1,7 +1,7 @@
 \pdfoutput=1
 %% Author: PGL  Porta Mana
 %% Created: 2020-10-28T21:29:34+0100
-%% Last-Updated: 2020-11-25T13:24:17+0100
+%% Last-Updated: 2020-11-25T16:22:55+0100
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newif\ifarxiv
 \arxivfalse
@@ -280,8 +280,10 @@ citestyle=authoryear-comp,bibstyle=pglpm-authoryear,autopunct=false,sorting=ny,s
 %\appto{\citesetup}{\footnotesize}% smaller font for citations
 \defbibheading{bibliography}[\bibname]{\section*{#1}\addcontentsline{toc}{section}{#1}%\markboth{#1}{#1}
 }
-\newcommand*{\citep}{\footcites}
-\newcommand*{\citey}{\footcites}%{\parencites*}
+%\newcommand*{\citep}{\footcites}
+\newcommand*{\citep}{\parencites}
+%\newcommand*{\citey}{\footcites}
+\newcommand*{\citey}{\parencites*}
 \newcommand*{\ibid}{\unspace\addtocounter{footnote}{-1}\footnotemark{}}
 %\renewcommand*{\cite}{\parencite}
 %\renewcommand*{\cites}{\parencites}
@@ -733,17 +735,20 @@ Open Science Framework \doi{10.31219/osf.io/#1}%
 \section{Notes on Iglesias \etal's paper [Luca]}
 \label{sec:notes_iglesiasetal}
 
-\mynote{TODO: Reformulate \amp\ simplify their approach in terms of a hierarchic
-  probability distribution.}
-
-
 Notes on \textcite{iglesiasetal2016}.
 
+\mynote{\textsc{todo}: Reformulate \amp\ simplify their approach in terms
+  of a hierarchic probability distribution.}
 
 \begin{itemize}[wide]
 \item The approximation on p.~545 left bottom can be very bad in high
   dimensions \citep{mackay1996}.
+\item Use of probabilistically-labelled nodes: doesn't this introduce a
+  redundant set of variables?
 \end{itemize}
+
+
+
 \textcolor{white}{If you find this you can claim a postcard from me.}
 
 %%%% examples use empheq
